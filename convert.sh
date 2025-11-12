@@ -108,7 +108,7 @@ cd /usr/local || {
   printf '%s\n' "/usr/local missing..."
   exit 1
 }
-[ "$(type vbutil_kernel)" ] ||{
+[ "$(command vbutil_kernel)" ] ||{
   printf '%s\n' "Missing vbuilt_kernel... Unable to proceed..."
   exit 1
 }
