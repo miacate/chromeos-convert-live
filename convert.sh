@@ -45,7 +45,7 @@ disk="${disk%p}"
 }
 unset line; printf '%s\n' "Active disk is $disk"
 
-[ "$(type cgpt)" ] || {
+[ "$(command cgpt)" ] || {
   printf 'Unable to find cgpt...\n'
   exit 1
 }
